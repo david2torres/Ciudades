@@ -1,0 +1,25 @@
+<div class="row m-5">
+  <div class="col">
+    <h1>Paises Habla Hispana</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Bandera</th>
+          <th>Pais</th>
+          <th>Capital</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let city of ciudades">
+          <td>
+            <img [src]="city.flag" class="img-thumb" alt="">
+          </td>
+          <td>{{city.name}}</td>
+          <td>{{city.capital}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</div>
